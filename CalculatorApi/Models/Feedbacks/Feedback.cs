@@ -5,6 +5,7 @@ namespace CalculatorApi.Models.Feedbacks
 {
     public class Feedback
     {
+        [JsonIgnore]
         public Guid Id { get; set; }
         public string Answer { get; set; }
         public Guid UserId { get; set; }
