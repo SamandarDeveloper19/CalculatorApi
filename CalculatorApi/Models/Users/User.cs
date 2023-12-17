@@ -6,6 +6,7 @@ namespace CalculatorApi.Models.Users
 {
     public class User
     {
+        [JsonIgnore]
         public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -14,6 +15,7 @@ namespace CalculatorApi.Models.Users
 
         [JsonIgnore]
         public List<Calculation> Calculations { get; set; }
+        [JsonIgnore]
         public List<Feedback> Feedbacks { get; set; }
 
 

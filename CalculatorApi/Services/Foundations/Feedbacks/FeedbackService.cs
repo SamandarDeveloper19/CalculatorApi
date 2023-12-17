@@ -16,13 +16,5 @@ namespace CalculatorApi.Services.Foundations.Feedbacks
         public IQueryable<Feedback> RetrieveAllFeedbacks() =>
             this.storageBroker.SelectAllFeedbacks();
 
-        public async ValueTask<Feedback> RetrieveFeedbackByIdAsync(Guid feedbackId) =>
-            await this.storageBroker.SelectFeedbackByIdAsync(feedbackId);
-
-        public async ValueTask<Feedback> ModifyFeedbackAsync(Feedback feedback) =>
-            await this.storageBroker.UpdateFeedbackAsync(feedback);
-
-        public async ValueTask<Feedback> RemoveFeedbackAsync(Feedback feedback) =>
-            await this.storageBroker.DeleteFeedbackAsync(feedback);
     }
 }

@@ -6,8 +6,5 @@ namespace CalculatorApi.Services.Foundations.Feedbacks
     {
         ValueTask<Feedback> AddFeedbackAsync(Feedback feedback);
         IQueryable<Feedback> RetrieveAllFeedbacks();
-        ValueTask<Feedback> RetrieveFeedbackByIdAsync(Guid feedbackId);
-        ValueTask<Feedback> ModifyFeedbackAsync(Feedback feedback);
-        ValueTask<Feedback> RemoveFeedbackAsync(Feedback feedback);
     }
 }
